@@ -36,10 +36,19 @@ Required:
 ## Section 2: Cloning the repository
 1. Use `git clone https://github.com/evjry/TinyMice && cd TinyMice`
 
-## Section 2: Building TinyMice
+## Section 3: Building TinyMice
 1. Run Makefile using `make`
 
+## Section 4: Explanation
+1. Makefile downloads/clones the kernel and copies the backed-up config into the linux directory;
+2. Makefile compiles the custom shell and commands by using GCC and LD;
+3. Makefile packages shell and custom commands into an initramfs archive named init.cpio using cpio command;
+4. Makefile builds the kernel image;
+5. Makefile creates virtual disk (.img file) using qemu-img;
+6. Makefile runs the generated bootable .iso file inside qemu
+
 # Tree
+```text
 .
 ├── cmd (commands)
 ├── config (linux kernel config file backup)
@@ -57,5 +66,4 @@ Required:
 └── tinymouse (my own desktop environment)
     ├── include
     └── src
-
-
+```

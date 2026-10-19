@@ -8,14 +8,17 @@ The goal of this project is to create a lightweight, easy to use and most import
 The best i want to leave as premade is kernel.
 
 # Project status:
-Progress: 4/200+ commands;
+Progress: 7/200+ commands;
 Current core: Linux Kernel + BusyBox
 
 # Completed:
 * rm;
 * rmdir;
 * pwd;
-* cd
+* cd;
+* kill;
+* echo;
+* power
 
 # Commands that i am currently making that isn't put by default:
 * ers (EasyResourceMonitor);
@@ -37,7 +40,7 @@ Required:
 1. Use `git clone https://github.com/evjry/TinyMice && cd TinyMice`
 
 ## Section 3: Building TinyMice
-1. Run Makefile using `make`
+1. Run Makefile using `make run`
 
 ## Section 4: Explanation
 1. Makefile downloads/clones the kernel and copies the backed-up config into the linux directory;

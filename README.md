@@ -43,7 +43,7 @@ Required:
 1. Use `git clone https://github.com/evjry/TinyMice && cd TinyMice`
 
 ## Section 3: Building TinyMice
-1. Run Makefile using `make run`
+1. Run Makefile using `make`
 
 ## Section 4: Explanation
 1. Makefile downloads/clones the kernel and copies the backed-up config into the linux directory;

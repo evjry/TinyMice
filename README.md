@@ -8,7 +8,7 @@ The goal of this project is to create a lightweight, easy to use and most import
 The best i want to leave as premade is kernel.
 
 # Project status:
-Progress: 7/200+ commands;
+Progress: 9/200+ commands; graphics: 1/100%;
 Current core: Linux Kernel + BusyBox
 
 # Completed:
@@ -18,7 +18,9 @@ Current core: Linux Kernel + BusyBox
 * cd;
 * kill;
 * echo;
-* power
+* power;
+* touch;
+* cp;
 
 # Commands that i am currently making that isn't put by default:
 * ers (EasyResourceMonitor);
@@ -44,29 +46,28 @@ Required:
 
 ## Section 4: Explanation
 1. Makefile downloads/clones the kernel and copies the backed-up config into the linux directory;
-2. Makefile compiles the custom shell and commands by using GCC and LD;
+2. Makefile compiles the custom shell and commands by using GCC;
 3. Makefile packages shell and custom commands into an initramfs archive named init.cpio using cpio command;
 4. Makefile builds the kernel image;
 5. Makefile creates virtual disk (.img file) using qemu-img;
-6. Makefile runs the generated bootable .iso file inside qemu
+6. Makefile mounts image and installs grub;
+7. Makefile runs the generated bootable .iso file inside qemu
 
 # Tree
 ```text
 .
-├── cmd (commands)
-├── config (linux kernel config file backup)
-├── shell (shell file)
-├── tinymice_root (root commands directory)
-│   ├── bin
-│   ├── dev
-│   ├── etc
-│   ├── proc
-│   ├── sbin
-│   ├── sys
-│   └── usr
-│       ├── bin
-│       └── sbin
-└── tinymouse (my own desktop environment)
-    ├── include
-    └── src
+├── config/ (linux kernel config file backup)
+├── internal/
+│   ├── linux/ (kernel)
+│   ├── shell/
+│   │   ├── mice.c
+│   ├── graphics/
+├── rootfs/
+│   ├── compiled commands and init
+├── src/
+│   ├── source code of commands
+├── assets/
+│   ├── disk file
+├── mnt/ (mount directory)
+└──
 ```

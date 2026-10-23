@@ -1,5 +1,5 @@
 # Welcome!
-Hello to my repository, this is TinyMice distribution made by me to you.
+Hello to my repository, this is TinyMice distribution made by me to you. Project is not ready but you can see progress here.
 
 # Description
 TinyMice is a linux distribution created from scratch (lfs), which uses BusyBox as temporary bootstrapping foundation while i slowly rewrite **every** command in C.

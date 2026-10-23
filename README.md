@@ -8,12 +8,13 @@ The goal of this project is to create a lightweight, easy to use and most import
 The best i want to leave as premade is kernel.
 
 # Project status:
-Progress: 9/200+ commands; graphics: 1/100%;
+Progress: 10/200+ commands; graphics: 1/100%;
 Current core: Linux Kernel + BusyBox
 
 # Completed:
 * rm;
 * rmdir;
+* mkdir;
 * pwd;
 * cd;
 * kill;

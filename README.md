@@ -35,6 +35,7 @@ Required:
 * bc;
 * git;
 * syslinux/isolinux
+* genisoimage/cdrkit (if you are on arch)
 * qemu (or any other emulator to run the TinyMice image.)
 
 ## Section 1: Installing dependencies

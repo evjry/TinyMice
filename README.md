@@ -34,7 +34,7 @@ Required:
 * bison and flex;
 * bc;
 * git;
-* isolinux/syslinux
+* geniso
 * qemu (or any other emulator to run the TinyMice image.)
 
 ## Section 1: Installing dependencies
